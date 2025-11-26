@@ -6,7 +6,7 @@ import { Thread } from '../types'
 export function generateFeedbackReport(
   threads: Thread[],
   fileName: string,
-  code: string
+  _code: string
 ): string {
   const now = new Date()
   const formattedDate = now.toLocaleDateString('en-US', {
@@ -96,7 +96,7 @@ ${message.content}
 The following suggestions were made during the review:
 
 `
-    threads.forEach((thread, threadIdx) => {
+    threads.forEach((thread) => {
       thread.messages.forEach((message) => {
         if (message.suggestedCode) {
           report += `### Suggestion for Lines ${thread.startLine}-${thread.endLine}

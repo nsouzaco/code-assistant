@@ -19,7 +19,7 @@ interface DiffLine {
 export default function DiffView({
   originalCode,
   suggestedCode,
-  language,
+  language: _language,
   onApply,
   onDismiss,
 }: DiffViewProps) {
