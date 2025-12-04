@@ -1,18 +1,71 @@
+<div align="center">
+
 # AI Code Review Assistant
 
-A focused, single-purpose tool where developers get AI-powered code review feedback anchored to specific code selections. Built with React, TypeScript, Monaco Editor, and Anthropic's Claude API.
+**A focused, single-purpose tool where developers get AI-powered code review feedback anchored to specific code selections.**
 
-## Features
+<br />
 
-- **Monaco Editor Integration**: Full VS Code editor experience with syntax highlighting for 70+ languages
-- **Thread-Based Conversations**: Create multiple conversation threads anchored to specific lines of code
-- **AI-Powered Code Review**: Get intelligent feedback from GPT-4o on code quality, bugs, and improvements
-- **Visual Indicators**: Gutter markers show active and resolved threads
-- **Quick Actions**: Pre-built prompts for common review tasks (explain, find bugs, suggest improvements)
-- **Markdown Support**: AI responses rendered with syntax-highlighted code blocks
-- **Multi-Thread Support**: Manage multiple code review threads simultaneously
+![React](https://img.shields.io/badge/React-18-61DAFB?style=flat-square&logo=react&logoColor=white)
+![TypeScript](https://img.shields.io/badge/TypeScript-5-3178C6?style=flat-square&logo=typescript&logoColor=white)
+![Vite](https://img.shields.io/badge/Vite-5-646CFF?style=flat-square&logo=vite&logoColor=white)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind-4-06B6D4?style=flat-square&logo=tailwindcss&logoColor=white)
+![OpenAI](https://img.shields.io/badge/OpenAI-GPT--4o-412991?style=flat-square&logo=openai&logoColor=white)
 
-## Setup
+</div>
+
+<br />
+
+## ✨ Features
+
+| Feature | Description |
+|---------|-------------|
+| **Monaco Editor** | Full VS Code editor experience with syntax highlighting for 70+ languages |
+| **Thread-Based Conversations** | Create multiple conversation threads anchored to specific lines of code |
+| **AI-Powered Review** | Get intelligent feedback from GPT-4o on code quality, bugs, and improvements |
+| **Visual Indicators** | Gutter markers show active and resolved threads |
+| **Quick Actions** | Pre-built prompts for common review tasks (explain, find bugs, suggest improvements) |
+| **Markdown Support** | AI responses rendered with syntax-highlighted code blocks |
+| **Multi-Thread Support** | Manage multiple code review threads simultaneously |
+
+<br />
+
+## 🛠 Tech Stack
+
+<table>
+<tr>
+<td align="center" width="96">
+<img src="https://skillicons.dev/icons?i=react" width="48" height="48" alt="React" />
+<br />React 18
+</td>
+<td align="center" width="96">
+<img src="https://skillicons.dev/icons?i=ts" width="48" height="48" alt="TypeScript" />
+<br />TypeScript
+</td>
+<td align="center" width="96">
+<img src="https://skillicons.dev/icons?i=vite" width="48" height="48" alt="Vite" />
+<br />Vite
+</td>
+<td align="center" width="96">
+<img src="https://skillicons.dev/icons?i=tailwind" width="48" height="48" alt="Tailwind" />
+<br />Tailwind v4
+</td>
+<td align="center" width="96">
+<img src="https://cdn.simpleicons.org/openai/412991" width="48" height="48" alt="OpenAI" />
+<br />GPT-4o
+</td>
+</tr>
+</table>
+
+| Category | Technology |
+|----------|------------|
+| **Editor** | Monaco Editor (VS Code's engine) |
+| **State** | Zustand |
+| **Markdown** | react-markdown + syntax highlighting |
+
+<br />
+
+## 🚀 Setup
 
 ### Prerequisites
 
@@ -21,30 +74,25 @@ A focused, single-purpose tool where developers get AI-powered code review feedb
 
 ### Installation
 
-1. Clone the repository:
 ```bash
+# Clone the repository
 git clone <repository-url>
 cd code-assistant
-```
 
-2. Install dependencies:
-```bash
+# Install dependencies
 npm install
-```
 
-3. Create a `.env` file in the root directory:
-```bash
+# Create environment file
 cp .env.example .env
 ```
 
-4. Add your OpenAI API key to `.env`:
+Add your OpenAI API key to `.env`:
 ```
 VITE_OPENAI_API_KEY=your_api_key_here
 ```
 
 ### Development
 
-Run the development server:
 ```bash
 npm run dev
 ```
@@ -53,17 +101,14 @@ Open [http://localhost:5173](http://localhost:5173) in your browser.
 
 ### Production Build
 
-Build for production:
 ```bash
-npm run build
+npm run build    # Build for production
+npm run preview  # Preview production build
 ```
 
-Preview production build:
-```bash
-npm run preview
-```
+<br />
 
-## Usage
+## 📖 Usage
 
 1. **Paste or type code** into the Monaco editor
 2. **Select lines of code** you want to review
@@ -73,10 +118,12 @@ npm run preview
 
 ### Keyboard Shortcuts
 
-- `Cmd/Ctrl+Shift+A`: Ask AI about current selection
-- `Enter`: Send message
-- `Shift+Enter`: New line in message input
-- `Cmd/Ctrl+Enter`: Send message (alternative)
+| Shortcut | Action |
+|----------|--------|
+| `Cmd/Ctrl+Shift+A` | Ask AI about current selection |
+| `Enter` | Send message |
+| `Shift+Enter` | New line in message input |
+| `Cmd/Ctrl+Enter` | Send message (alternative) |
 
 ### Tips
 
@@ -85,17 +132,9 @@ npm run preview
 - Resolve threads when issues are addressed
 - Switch between threads using the thread list
 
-## Tech Stack
+<br />
 
-- **Framework**: React 18 with TypeScript
-- **Editor**: Monaco Editor (VS Code's editor engine)
-- **State Management**: Zustand
-- **Styling**: Tailwind CSS v4
-- **AI**: OpenAI API (GPT-4o)
-- **Build Tool**: Vite
-- **Markdown**: react-markdown with syntax highlighting
-
-## Project Structure
+## 📁 Project Structure
 
 ```
 src/
@@ -108,10 +147,20 @@ src/
 └── index.css       # Global styles
 ```
 
-## Environment Variables
+<br />
 
-- `VITE_OPENAI_API_KEY`: Your OpenAI API key (required)
+## 🔐 Environment Variables
 
-## License
+| Variable | Description |
+|----------|-------------|
+| `VITE_OPENAI_API_KEY` | Your OpenAI API key (required) |
 
-ISC
+<br />
+
+---
+
+<div align="center">
+
+**ISC License**
+
+</div>
